@@ -1,0 +1,7 @@
+<tr>
+    <td><%= post.content %></td>  
+    <td><%= link_to 'create', posts_path, method: :post, data: {remote: true, params: {post: {content: "Matias"}}.to_param} %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>  
+    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
+</tr>
